@@ -6,4 +6,4 @@ def root_view():
 
 @app.get("/method/{name}")
 async def method_name_view(name: str):
-    return {"method" : f" {name}"}
+    return {"method" : f"{name}"}
