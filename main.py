@@ -4,6 +4,6 @@ app = FastAPI()
 def root_view():
     return {"message" : "Hello world!"}
 
-@app.get("/method/{name}")
+@app.get("/{name}")
 async def method_name_view(name: str):
     return {"method" : f"{name}"}
